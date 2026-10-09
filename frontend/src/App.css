@@ -1,0 +1,367 @@
+/* =========================================================
+   GLOBAL APP LAYOUT
+========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #fbfaf6;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+
+/* =========================================================
+   USER APP SHELL
+========================================================= */
+
+.app-shell {
+  display: flex;
+
+  width: 100%;
+  min-height: 100vh;
+
+  background: #fbfaf6;
+}
+
+
+/* =========================================================
+   MAIN AREA
+========================================================= */
+
+.app-main {
+  flex: 1;
+
+  min-width: 0;
+  min-height: 100vh;
+
+  background: #fbfaf6;
+}
+
+
+/* =========================================================
+   PAGE CONTENT
+========================================================= */
+
+.app-content {
+  width: 100%;
+  min-height: calc(100vh - 78px);
+
+  background: #fbfaf6;
+}
+
+
+/* =========================================================
+   ROUTE INTELLIGENCE PLACEHOLDER
+========================================================= */
+
+.placeholder-page {
+  min-height: calc(100vh - 78px);
+
+  padding: 42px 38px;
+
+  background: #fbfaf6;
+}
+
+.placeholder-eyebrow {
+  color: #99978e;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.placeholder-page h1 {
+  margin: 10px 0 8px;
+
+  color: #292a23;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.placeholder-page > p {
+  margin: 0;
+
+  color: #85837a;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+.placeholder-card {
+  display: flex;
+
+  gap: 50px;
+
+  margin-top: 30px;
+
+  padding: 24px;
+
+  max-width: 700px;
+
+  border: 1px solid #e5e3da;
+  border-radius: 10px;
+
+  background: #fffefa;
+}
+
+.placeholder-card div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.placeholder-card span {
+  color: #99978e;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.3px;
+}
+
+.placeholder-card strong {
+  color: #414239;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   ADMIN
+========================================================= */
+
+.admin-wrapper {
+  min-height: 100vh;
+
+  background: #fbfaf6;
+}
+
+.admin-topbar {
+  height: 78px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 34px;
+
+  border-bottom: 1px solid #e5e3da;
+
+  background: #fffefa;
+}
+
+.admin-brand {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.admin-brand strong {
+  color: #292a23;
+
+  font-size: 14px;
+
+  letter-spacing: 3px;
+}
+
+.admin-brand span {
+  color: #99978e;
+
+  font-size: 7px;
+
+  letter-spacing: 2px;
+}
+
+.admin-user {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.admin-user > div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 3px;
+}
+
+.admin-user strong {
+  color: #3b3c34;
+
+  font-size: 11px;
+}
+
+.admin-user span {
+  color: #99978e;
+
+  font-size: 8px;
+}
+
+.admin-user button {
+  padding: 9px 15px;
+
+  border: 1px solid #dedcd3;
+  border-radius: 7px;
+
+  background: #fffefa;
+
+  color: #55564c;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.admin-user button:hover {
+  background: #f2f1eb;
+}
+
+.admin-content {
+  padding: 45px;
+}
+
+.admin-eyebrow {
+  color: #99978e;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.admin-content h1 {
+  margin: 10px 0 8px;
+
+  color: #292a23;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.admin-content > p {
+  color: #85837a;
+
+  font-size: 12px;
+}
+
+.admin-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.admin-stats > div {
+  min-height: 125px;
+
+  padding: 20px;
+
+  border: 1px solid #e5e3da;
+  border-radius: 10px;
+
+  background: #fffefa;
+}
+
+.admin-stats span {
+  display: block;
+
+  color: #99978e;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.3px;
+}
+
+.admin-stats strong {
+  display: block;
+
+  margin-top: 18px;
+
+  color: #303226;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 27px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .admin-stats {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .app-shell {
+    display: block;
+  }
+
+  .app-main {
+    width: 100%;
+  }
+
+  .admin-topbar {
+    padding: 0 18px;
+  }
+
+  .admin-content {
+    padding: 25px 18px;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .placeholder-page {
+    padding: 28px 18px;
+  }
+
+  .placeholder-card {
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+}

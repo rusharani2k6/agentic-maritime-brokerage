@@ -1,0 +1,388 @@
+/* =========================================================
+   NEW QUOTATION
+========================================================= */
+
+.new-quotation-page {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.quotation-page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+.quotation-badge {
+  display: inline-block;
+
+  padding: 7px 11px;
+
+  border: 1px solid #d5d7c5;
+  border-radius: 20px;
+
+  background: #eeeee3;
+
+  color: #5e6846;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.quotation-page-header h2 {
+  margin-top: 16px;
+
+  color: #292a23;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(38px, 5vw, 52px);
+
+  font-weight: 500;
+
+  letter-spacing: -1.5px;
+}
+
+.quotation-page-header h2 em {
+  color: #69734f;
+}
+
+.quotation-page-header p {
+  margin-top: 10px;
+
+  color: #77756d;
+
+  font-size: 11px;
+
+  line-height: 1.6;
+}
+
+.back-dashboard-button {
+  height: 40px;
+
+  padding: 0 14px;
+
+  border: 1px solid #d8d5ca;
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  color: #5b5d51;
+
+  font-size: 9px;
+}
+
+.back-dashboard-button:hover {
+  background: #ebe8dd;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.quotation-form {
+  margin-top: 32px;
+
+  border: 1px solid #dedbd0;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  overflow: hidden;
+
+  box-shadow:
+    0 15px 40px
+      rgba(58, 57, 44, 0.04);
+}
+
+.quotation-form-section {
+  padding: 27px 30px;
+
+  border-bottom: 1px solid #e5e1d7;
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.form-section-heading {
+  display: flex;
+
+  gap: 13px;
+
+  margin-bottom: 23px;
+}
+
+.form-section-heading > span {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 7px;
+
+  background: #ececdf;
+
+  color: #66704d;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.form-section-heading h3 {
+  color: #393a31;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form-section-heading p {
+  margin-top: 3px;
+
+  color: #99968c;
+
+  font-size: 9px;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.quotation-two-columns {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 15px;
+}
+
+.quotation-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 17px 15px;
+}
+
+/* =========================================================
+   FIELD
+========================================================= */
+
+.quotation-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.quotation-field label {
+  margin-bottom: 7px;
+
+  color: #4b4c42;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.quotation-field label b {
+  color: #78855b;
+}
+
+.quotation-field input,
+.quotation-field select,
+.quotation-field textarea {
+  width: 100%;
+
+  border: 1px solid #d9d6cc;
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #fffefa;
+
+  color: #35362e;
+
+  font-size: 10px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.quotation-field input,
+.quotation-field select {
+  height: 44px;
+
+  padding: 0 12px;
+}
+
+.quotation-field textarea {
+  padding: 12px;
+
+  resize: vertical;
+}
+
+.quotation-field input::placeholder,
+.quotation-field textarea::placeholder {
+  color: #aaa69d;
+}
+
+.quotation-field input:focus,
+.quotation-field select:focus,
+.quotation-field textarea:focus {
+  border-color: #7b845e;
+
+  box-shadow:
+    0 0 0 3px
+      rgba(123, 132, 94, 0.08);
+}
+
+/* =========================================================
+   NOTES
+========================================================= */
+
+.quotation-notes {
+  margin-top: 18px;
+}
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.quotation-message {
+  margin: 18px 30px 0;
+
+  padding: 11px 13px;
+
+  border-radius: 8px;
+
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.quotation-message.success {
+  border: 1px solid #ccd6bd;
+
+  background: #e5eadc;
+
+  color: #536743;
+}
+
+.quotation-message.error {
+  border: 1px solid #e5c8c1;
+
+  background: #f3dfda;
+
+  color: #87453b;
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.quotation-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding: 20px 30px;
+
+  background: #f5f3eb;
+}
+
+.quotation-cancel,
+.quotation-submit {
+  height: 42px;
+
+  padding: 0 17px;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.quotation-cancel {
+  border: 1px solid #d7d4c9;
+
+  background: transparent;
+
+  color: #68675e;
+}
+
+.quotation-cancel:hover {
+  background: #e9e6dc;
+}
+
+.quotation-submit {
+  border: none;
+
+  background: #303329;
+
+  color: white;
+}
+
+.quotation-submit:hover {
+  background: #454938;
+}
+
+.quotation-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+  .quotation-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quotation-two-columns,
+  .quotation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quotation-form-section {
+    padding: 23px 18px;
+  }
+
+  .quotation-actions {
+    padding: 17px 18px;
+  }
+
+  .quotation-message {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  .quotation-actions {
+    flex-direction: column-reverse;
+  }
+
+  .quotation-cancel,
+  .quotation-submit {
+    width: 100%;
+  }
+}

@@ -1,0 +1,414 @@
+/* =========================================================
+   QUOTATIONS
+========================================================= */
+
+.quotations-page {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.quotations-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+.quotations-badge {
+  display: inline-block;
+
+  padding: 7px 11px;
+
+  border: 1px solid #d5d7c5;
+  border-radius: 20px;
+
+  background: #eeeee3;
+
+  color: #5e6846;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.quotations-header h2 {
+  margin-top: 16px;
+
+  color: #292a23;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(38px, 5vw, 52px);
+
+  font-weight: 500;
+
+  letter-spacing: -1.5px;
+}
+
+.quotations-header h2 em {
+  color: #69734f;
+}
+
+.quotations-header p {
+  margin-top: 10px;
+
+  color: #77756d;
+
+  font-size: 11px;
+}
+
+.new-quotation-button {
+  height: 43px;
+
+  padding: 0 17px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #303329;
+
+  color: white;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.new-quotation-button:hover {
+  background: #454938;
+}
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.quotations-toolbar {
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 30px;
+
+  padding: 12px 15px;
+
+  border: 1px solid #dedbd0;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.quotation-search {
+  height: 38px;
+
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 11px;
+
+  border: 1px solid #d9d6cc;
+  border-radius: 8px;
+
+  background: #fffefa;
+}
+
+.quotation-search span {
+  color: #99968c;
+
+  font-size: 17px;
+}
+
+.quotation-search input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #3d3e35;
+
+  font-size: 9px;
+}
+
+.quotation-search input::placeholder {
+  color: #aaa79f;
+}
+
+.quotations-toolbar select {
+  height: 38px;
+
+  min-width: 140px;
+
+  padding: 0 10px;
+
+  border: 1px solid #d9d6cc;
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #fffefa;
+
+  color: #68665d;
+
+  font-size: 9px;
+}
+
+.clear-history-button {
+  height: 38px;
+
+  padding: 0 12px;
+
+  border: 1px solid #e1cbc6;
+  border-radius: 8px;
+
+  background: #f7eae6;
+
+  color: #875047;
+
+  font-size: 8px;
+}
+
+.clear-history-button:hover {
+  background: #f2dfda;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.quotations-card {
+  margin-top: 15px;
+
+  border: 1px solid #dedbd0;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  box-shadow:
+    0 12px 35px
+      rgba(58, 57, 44, 0.035);
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.quotations-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.quotations-table {
+  width: 100%;
+
+  min-width: 850px;
+
+  border-collapse: collapse;
+}
+
+.quotations-table th {
+  padding: 15px;
+
+  border-bottom: 1px solid #dedbd0;
+
+  color: #929087;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-align: left;
+}
+
+.quotations-table td {
+  padding: 16px 15px;
+
+  border-bottom: 1px solid #ebe7de;
+
+  color: #77746b;
+
+  font-size: 9px;
+}
+
+.quotations-table tbody tr:hover {
+  background: #faf9f4;
+}
+
+.quotations-table td strong {
+  color: #414239;
+
+  font-size: 9px;
+}
+
+/* =========================================================
+   ROUTE
+========================================================= */
+
+.route-cell {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+.route-cell span {
+  color: #626259;
+
+  white-space: nowrap;
+}
+
+.route-cell small {
+  color: #a19e94;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.quotation-status {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  background: #f0ece0;
+
+  color: #81704b;
+
+  font-size: 7px;
+  font-weight: 700;
+}
+
+.quotation-status.completed {
+  background: #e5eadb;
+  color: #587043;
+}
+
+.quotation-status.pending {
+  background: #f0ece0;
+  color: #81704b;
+}
+
+.quotation-status.failed {
+  background: #f2dfda;
+  color: #875047;
+}
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.quotations-empty {
+  min-height: 350px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 20px;
+
+  text-align: center;
+}
+
+.quotations-empty-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #efefe4;
+
+  color: #707956;
+
+  font-size: 21px;
+}
+
+.quotations-empty h3 {
+  margin-top: 15px;
+
+  color: #45463d;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 22px;
+
+  font-weight: 500;
+}
+
+.quotations-empty p {
+  margin-top: 6px;
+
+  color: #9b988e;
+
+  font-size: 9px;
+}
+
+.quotations-empty button {
+  margin-top: 17px;
+
+  padding: 10px 15px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #303329;
+
+  color: white;
+
+  font-size: 9px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+  .quotations-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .new-quotation-button {
+    width: 100%;
+  }
+
+  .quotations-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .quotation-search {
+    flex-basis: 100%;
+  }
+
+  .quotations-toolbar select {
+    flex: 1;
+  }
+
+  .clear-history-button {
+    flex: 1;
+  }
+}

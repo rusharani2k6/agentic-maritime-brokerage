@@ -1,0 +1,168 @@
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.topbar {
+  height: 78px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 34px;
+
+  background: #fbfaf6;
+
+  border-bottom: 1px solid #e7e5dd;
+}
+
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.topbar-page-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar-page-title > span {
+  margin-bottom: 5px;
+
+  color: #9a988f;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.topbar-page-title h2 {
+  margin: 0;
+
+  color: #2e3028;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 23px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   RIGHT
+========================================================= */
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+}
+
+.system-status {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #77766d;
+
+  font-size: 10px;
+}
+
+.system-status-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #64804e;
+}
+
+.topbar-divider {
+  width: 1px;
+  height: 27px;
+
+  background: #e1dfd7;
+}
+
+
+/* =========================================================
+   USER
+========================================================= */
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.topbar-avatar {
+  width: 33px;
+  height: 33px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #dddccf;
+
+  color: #4f543f;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.topbar-user-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar-user-text strong {
+  color: #414139;
+
+  font-size: 10px;
+}
+
+.topbar-user-text span {
+  margin-top: 2px;
+
+  color: #99978e;
+
+  font-size: 8px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .topbar {
+    height: 68px;
+
+    padding: 0 18px;
+  }
+
+  .topbar-page-title h2 {
+    font-size: 19px;
+  }
+
+  .system-status {
+    display: none;
+  }
+
+  .topbar-divider {
+    display: none;
+  }
+
+  .topbar-user-text {
+    display: none;
+  }
+
+}

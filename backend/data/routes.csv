@@ -1,0 +1,15 @@
+route_id,origin,destination,via,route_name,transit_time_days,distance_km,carrier,risk_score,congestion_score,ocean_freight_usd,port_charges_usd,fuel_surcharge_usd
+R001,Chennai,Amsterdam,Singapore,Chennai → Singapore → Amsterdam,24,14500,Maersk,18,25,1200,180,110
+R002,Chennai,Amsterdam,Dubai,Chennai → Dubai → Amsterdam,27,15100,CMA CGM,24,32,1140,210,125
+R003,Chennai,Amsterdam,Colombo,Chennai → Colombo → Amsterdam,25,14900,MSC,15,20,1180,170,115
+R004,Chennai,Amsterdam,Port Klang,Chennai → Port Klang → Amsterdam,23,14300,Hapag-Lloyd,12,18,1260,160,105
+R005,Chennai,Amsterdam,Jebel Ali,Chennai → Jebel Ali → Amsterdam,26,15050,ONE,20,28,1160,205,120
+R006,Chennai,Amsterdam,Salalah,Chennai → Salalah → Amsterdam,25,14750,Evergreen,16,22,1210,175,112
+R007,Chennai,Amsterdam,Colombo + Rotterdam,Chennai → Colombo → Rotterdam → Amsterdam,28,15400,COSCO,14,30,1120,220,130
+R008,Chennai,Amsterdam,Singapore + Rotterdam,Chennai → Singapore → Rotterdam → Amsterdam,27,15300,Yang Ming,19,24,1170,215,128
+R009,Chennai,Amsterdam,Dubai + Rotterdam,Chennai → Dubai → Rotterdam → Amsterdam,29,15700,MSC,27,35,1100,230,135
+R010,Chennai,Amsterdam,Port Klang + Rotterdam,Chennai → Port Klang → Rotterdam → Amsterdam,26,15150,Maersk,13,21,1230,190,118
+R011,Chennai,Rotterdam,Singapore,Chennai → Singapore → Rotterdam,23,14200,Maersk,17,23,1190,175,108
+R012,Chennai,Rotterdam,Colombo,Chennai → Colombo → Rotterdam,24,14600,MSC,14,20,1210,170,112
+R013,Chennai,Dubai,Direct,Chennai → Dubai Direct,12,4800,CMA CGM,10,18,700,120,65
+R014,Chennai,Singapore,Direct,Chennai → Singapore Direct,9,4300,Maersk,8,15,620,100,58

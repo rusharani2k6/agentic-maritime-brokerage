@@ -1,0 +1,354 @@
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px 16px;
+
+  background: #f7f6f1;
+
+  border-right: 1px solid #e5e3da;
+
+  z-index: 100;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 4px 8px 30px;
+}
+
+.sidebar-logo {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #303326;
+  color: white;
+
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
+.sidebar-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-brand-text strong {
+  color: #292a23;
+
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.sidebar-brand-text span {
+  margin-top: 3px;
+
+  color: #88877f;
+
+  font-size: 7px;
+  letter-spacing: 1.8px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.sidebar-section {
+  margin-top: 8px;
+}
+
+.sidebar-section-title {
+  display: block;
+
+  padding: 0 10px 10px;
+
+  color: #99978e;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1.7px;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.sidebar-nav-item {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #77766d;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.sidebar-nav-item:hover {
+  background: #eeece4;
+  color: #303326;
+}
+
+.sidebar-nav-item.active {
+  background: #303326;
+  color: white;
+}
+
+.sidebar-nav-icon {
+  width: 20px;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   AGENT BOX
+========================================================= */
+
+.sidebar-agent-box {
+  margin-top: 28px;
+
+  padding: 14px 10px;
+
+  border-top: 1px solid #e5e3da;
+}
+
+.sidebar-agent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+.sidebar-agent-header .sidebar-section-title {
+  padding: 0;
+}
+
+.agent-online-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #5f7848;
+
+  box-shadow: 0 0 0 3px rgba(95, 120, 72, 0.1);
+}
+
+
+.sidebar-agent {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 12px;
+}
+
+.mini-agent-dot {
+  width: 6px;
+  height: 6px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #66814f;
+}
+
+.sidebar-agent div {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-agent strong {
+  color: #4b4b43;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.sidebar-agent small {
+  margin-top: 2px;
+
+  color: #98968d;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.sidebar-bottom {
+  margin-top: auto;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #e5e3da;
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 5px 7px 13px;
+}
+
+.sidebar-user-avatar {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #dddccf;
+
+  color: #4d5140;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sidebar-user-info {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-user-info strong {
+  overflow: hidden;
+
+  color: #414139;
+
+  font-size: 10px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sidebar-user-info span {
+  margin-top: 3px;
+
+  overflow: hidden;
+
+  color: #99978e;
+
+  font-size: 8px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sidebar-logout {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 9px 10px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #8b665e;
+
+  font-size: 11px;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.sidebar-logout:hover {
+  background: #f0e7e3;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .sidebar {
+    width: 215px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .sidebar {
+    display: none;
+  }
+
+}
